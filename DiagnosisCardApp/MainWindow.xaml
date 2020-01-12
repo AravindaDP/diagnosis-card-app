@@ -6,4 +6,89 @@
         xmlns:local="clr-namespace:DiagnosisCardApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="675" Width="1200" ResizeMode="CanMinimize">
+    <Grid>
+
+        <Label Content="Hospital" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="81,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.597,0.657"/>
+        <Label Content="Ward" HorizontalAlignment="Left" Margin="320,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="376,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.067,-1.878"/>
+        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="289" Margin="10,41,0,0" VerticalAlignment="Top" Width="1161">
+            <CheckBox Content="Hyperlipidemia" HorizontalAlignment="Left" Margin="931,57,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.212,-1.053"/>
+        </GroupBox>
+        <Label Content="BHT" HorizontalAlignment="Left" Margin="380,108,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="29,68,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button Content="Save PDF" HorizontalAlignment="Left" Margin="1096,606,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="1001,606,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.413,1.748"/>
+        <Label Content="Personal Health No" HorizontalAlignment="Left" Margin="29,109,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="124"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="158,112,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="175"/>
+        <Label Content="Language" HorizontalAlignment="Left" Margin="376,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.689,-7.566" FontWeight="Bold"/>
+        <RadioButton Content="Sinhala" HorizontalAlignment="Left" Margin="446,74,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Tamil" HorizontalAlignment="Left" Margin="519,74,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="468,108,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Allergies" HorizontalAlignment="Left" Margin="645,68,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" Width="83"/>
+        <CheckBox Content="Food" HorizontalAlignment="Left" Margin="728,74,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Drug" HorizontalAlignment="Left" Margin="795,74,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Plaster" HorizontalAlignment="Left" Margin="858,74,0,0" VerticalAlignment="Top"/>
+        <Label Content="Co morbidities" HorizontalAlignment="Left" Margin="645,108,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" Width="96"/>
+        <CheckBox Content="Diabetes" HorizontalAlignment="Left" Margin="759,112,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Hypertension" HorizontalAlignment="Left" Margin="842,114,0,0" VerticalAlignment="Top"/>
+        <Label Content="Age" HorizontalAlignment="Left" Margin="34,201,0,0" VerticalAlignment="Top" FontWeight="Bold" RenderTransformOrigin="0.473,2.11"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="119,75,0,0" TextWrapping="Wrap" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="214"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="119,201,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Brood Group" HorizontalAlignment="Left" Margin="34,154,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <ComboBox HorizontalAlignment="Left" Margin="122,158,0,0" VerticalAlignment="Top" Width="120">
+            <ListBoxItem Content="A+"/>
+            <ListBoxItem Content="A-"/>
+            <ListBoxItem Content="B+"/>
+            <ListBoxItem Content="B-"/>
+            <ListBoxItem Content="AB+"/>
+            <ListBoxItem Content="AB-"/>
+            <ListBoxItem Content="O+"/>
+            <ListBoxItem Content="O-"/>
+        </ComboBox>
+        <Label Content="Sex" HorizontalAlignment="Left" Margin="376,154,0,0" VerticalAlignment="Top" RenderTransformOrigin="7.553,-7.509" FontWeight="Bold"/>
+        <RadioButton Content="Male" HorizontalAlignment="Left" Margin="429,160,0,0" VerticalAlignment="Top" GroupName="Sex"/>
+        <RadioButton Content="Female" HorizontalAlignment="Left" Margin="493,160,0,0" VerticalAlignment="Top" GroupName="Sex"/>
+        <CheckBox Content="Ischemic Heart Disease" HorizontalAlignment="Left" Margin="759,148,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="CKD" HorizontalAlignment="Left" Margin="919,148,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Stroke" HorizontalAlignment="Left" Margin="989,148,0,0" VerticalAlignment="Top"/>
+        <Label Content="Admission Date" HorizontalAlignment="Left" Margin="34,242,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <DatePicker HorizontalAlignment="Left" Margin="158,244,0,0" VerticalAlignment="Top" Width="175"/>
+        <Label Content="Discharge Date" HorizontalAlignment="Left" Margin="368,242,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.606,-8.462" FontWeight="Bold"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="493,242,0,0" VerticalAlignment="Top" RenderTransformOrigin="5.935,-12.593"/>
+        <Label Content="Admission Mode" HorizontalAlignment="Left" Margin="34,284,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <RadioButton Content="Self" HorizontalAlignment="Left" Margin="154,290,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.791,-11.399" GroupName="Admission Mode"/>
+        <RadioButton Content="Referral" HorizontalAlignment="Left" Margin="214,290,0,0" VerticalAlignment="Top" GroupName="Admission Mode"/>
+        <RadioButton Content="Transfer" HorizontalAlignment="Left" Margin="298,290,0,0" VerticalAlignment="Top" GroupName="Admission Mode"/>
+        <Label Content="Discharge Mode" HorizontalAlignment="Left" Margin="393,284,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.535,-9.505" FontWeight="Bold"/>
+        <RadioButton Content="Routine" HorizontalAlignment="Left" Margin="503,290,0,0" VerticalAlignment="Top" GroupName="Discharge Mode"/>
+        <RadioButton Content="Transfer" HorizontalAlignment="Left" Margin="583,290,0,0" VerticalAlignment="Top" GroupName="Discharge Mode"/>
+        <RadioButton Content="Self" HorizontalAlignment="Left" Margin="672,290,0,0" VerticalAlignment="Top" GroupName="Discharge Mode"/>
+        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="279" Margin="10,347,0,0" VerticalAlignment="Top" Width="634">
+            <ListBox HorizontalAlignment="Left" Height="100" Margin="331,124,0,0" VerticalAlignment="Top" Width="214"/>
+        </GroupBox>
+        <ComboBox HorizontalAlignment="Left" Margin="122,380,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Site" HorizontalAlignment="Left" Margin="28,420,0,0" VerticalAlignment="Top" RenderTransformOrigin="-12.452,0.986" FontWeight="Bold"/>
+        <ComboBox HorizontalAlignment="Left" Margin="122,420,0,0" VerticalAlignment="Top" Width="120"/>
+        <ListBox HorizontalAlignment="Left" Height="100" Margin="28,492,0,0" VerticalAlignment="Top" Width="214">
+            <ListBoxItem Content="Dr Smith"/>
+            <ListBoxItem Content="Dr Pamela"/>
+        </ListBox>
+        <Button Content="&gt;" HorizontalAlignment="Left" Margin="269,511,0,0" VerticalAlignment="Top" Width="46" RenderTransformOrigin="1.258,0.436"/>
+        <Button Content="&lt;" HorizontalAlignment="Left" Margin="269,549,0,0" VerticalAlignment="Top" Width="46" RenderTransformOrigin="-5.503,2.55"/>
+        <Label Content="Procedure" HorizontalAlignment="Left" Margin="28,376,0,0" VerticalAlignment="Top" RenderTransformOrigin="-15.836,-3.139" FontWeight="Bold"/>
+        <Label Content="Done By" HorizontalAlignment="Left" Margin="29,461,0,0" VerticalAlignment="Top" RenderTransformOrigin="-9.865,-1.469" FontWeight="Bold"/>
+        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="245" Margin="672,347,0,0" VerticalAlignment="Top" Width="499"/>
+        <ListBox HorizontalAlignment="Left" Height="100" Margin="692,420,0,0" VerticalAlignment="Top" Width="180">
+            <ListBoxItem Content="Paracetemol"/>
+            <ListBoxItem Content="Vitamine C"/>
+        </ListBox>
+        <Label Content="Medications" HorizontalAlignment="Left" Margin="692,378,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.458,-8.181" FontWeight="Bold"/>
+        <Button Content="&gt;" HorizontalAlignment="Left" Margin="894,446,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="3.406,-8.078"/>
+        <Button Content="&lt;" HorizontalAlignment="Left" Margin="894,477,0,0" VerticalAlignment="Top" Width="55"/>
+        <ListBox HorizontalAlignment="Left" Height="100" Margin="971,420,0,0" VerticalAlignment="Top" Width="180"/>
+        <Label Content="Clinic Consultant" HorizontalAlignment="Left" Margin="692,546,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <ComboBox HorizontalAlignment="Left" Margin="829,547,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
 </Window>
