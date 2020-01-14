@@ -23,6 +23,8 @@ namespace DiagnosisCardApp
         public MainWindow()
         {
             InitializeComponent();
+            DiagnosisCardViewModel viewModel = new DiagnosisCardViewModel();
+            DataContext = viewModel;
         }
     }
 }
