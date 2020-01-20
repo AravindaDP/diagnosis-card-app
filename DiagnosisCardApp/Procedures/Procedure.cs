@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DiagnosisCard.Procedures
+namespace DiagnosisCardApp.Procedures
 {
     public class Procedure
     {
