@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AllergiesModel.cs" />
+    <Compile Include="CheckBoxBindingConverter.cs" />
+    <Compile Include="CheckBoxViewModel.cs" />
+    <Compile Include="RadioButtonCheckedConverter.cs" />
     <Compile Include="RelayCommand.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
